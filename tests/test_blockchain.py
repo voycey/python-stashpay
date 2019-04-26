@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #####
-# Part of `libsmartcash`
+# Part of `libstashpay`
 #
 # Copyright 2018 dustinface
 #
@@ -24,8 +24,8 @@
 #####
 
 import os, logging
-from smartcash.rpc import RPCConfig
-from smartcash.blockchain import SmartCashBlockchain
+from stashpay.rpc import RPCConfig
+from stashpay.blockchain import SmartCashBlockchain
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     #chain = SmartCashBlockchain('sqlite:////' + directory + '/tt.db', rpcConfig)
 
     # Test MYSQL - You need to create the database before!
-    chain = SmartCashBlockchain('mysql+mysqlconnector://root:smartcash@localhost/smartcash')
+    chain = SmartCashBlockchain('mysql+mysqlconnector://root:stashpay@localhost/stashpay')
 
     chain.run()
 

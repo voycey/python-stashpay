@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #####
-# Part of `libsmartcash`
+# Part of `libstashpay`
 #
 # Copyright 2018 dustinface
 #
@@ -26,7 +26,7 @@
 import logging
 import time
 import sys
-from smartcash.rpc import SmartCashRPC, RPCConfig
+from stashpay.rpc import SmartCashRPC, RPCConfig
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 

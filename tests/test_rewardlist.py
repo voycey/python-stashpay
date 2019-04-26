@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #####
-# Part of `libsmartcash`
+# Part of `libstashpay`
 #
 # Copyright 2018 dustinface
 #
@@ -24,8 +24,8 @@
 #####
 
 import os, logging, time
-from smartcash.rpc import RPCConfig
-from smartcash.rewardlist import SNRewardList, SNReward
+from stashpay.rpc import RPCConfig
+from stashpay.rewardlist import SNRewardList, SNReward
 
 if not input:
     input=raw_input

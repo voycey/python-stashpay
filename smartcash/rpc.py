@@ -1,5 +1,5 @@
 #
-# Part of `python-smartcash`
+# Part of `python-stashpay`
 #
 # Copyright 2018 dustinface
 #
@@ -38,7 +38,7 @@ try:
 except ImportError:
     import urlparse
 
-logger = logging.getLogger("smartcash.rpc")
+logger = logging.getLogger("stashpay.rpc")
 
 class RPCException(Exception):
     def __init__(self, code = None, message = None):

@@ -1,5 +1,5 @@
 #
-# Part of `python-smartcash`
+# Part of `python-stashpay`
 #
 # Simple class to create and maintain a database
 # with all paid SmartNode rewards.
@@ -29,11 +29,11 @@ from threading import Thread, Lock
 import time
 import json
 import logging
-from smartcash.util import ThreadedSQLite, getBlockReward, getPayeesPerBlock, getPayoutInterval
-from smartcash.rpc import SmartCashRPC, RPCConfig
+from stashpay.util import ThreadedSQLite, getBlockReward, getPayeesPerBlock, getPayoutInterval
+from stashpay.rpc import SmartCashRPC, RPCConfig
 from sqlalchemy import *
 
-logger = logging.getLogger("smartcash.rewardlist")
+logger = logging.getLogger("stashpay.rewardlist")
 
 def reward_factory(cursor, row):
     d = {}

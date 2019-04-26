@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Part of `libsmartcash`
+# Part of `libstashpay`
 #
 # Copyright 2018 dustinface
 #
@@ -35,7 +35,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='python-smartcash',
+    name='python-stashpay',
     version=__version__,
     description='Some stuff for SmartCash projects.',
     long_description=open('README.md').read(),
@@ -43,8 +43,8 @@ setup(
     author_email='<xdustinfacex@gmail.com>',
     maintainer='dustinface',
     maintainer_email='<xdustinfacex@gmail.com>',
-    url='https://github.com/xdustinface/python-smartcash',
-    packages=['smartcash'],
+    url='https://github.com/xdustinface/python-stashpay',
+    packages=['stashpay'],
     install_requires=['sqlalchemy==1.2.5', 'requests==2.18.4'],
     zip_safe=False,
     classifiers=[

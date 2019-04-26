@@ -1,5 +1,5 @@
 #
-# Part of `python-smartcash`
+# Part of `python-stashpay`
 #
 # Copyright 2018 dustinface
 #
