@@ -37,7 +37,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='python-stashpay',
     version=__version__,
-    description='Some stuff for SmartCash projects.',
+    description='Some stuff for Stashpay projects.',
     long_description=open('README.md').read(),
     author='dustinface',
     author_email='<xdustinfacex@gmail.com>',

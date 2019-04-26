@@ -30,7 +30,7 @@ import time
 import json
 import logging
 from stashpay.util import ThreadedSQLite, getBlockReward, getPayeesPerBlock, getPayoutInterval
-from stashpay.rpc import SmartCashRPC, RPCConfig
+from stashpay.rpc import StashpayRPC, RPCConfig
 from sqlalchemy import *
 
 logger = logging.getLogger("stashpay.rewardlist")
@@ -102,7 +102,7 @@ class SNRewardList(Thread):
 
         self.rewardCB = rewardCB
         self.errorCB = errorCB
-        self.rpc = SmartCashRPC(rpcConfig)
+        self.rpc = StashpayRPC(rpcConfig)
 
         self.chainHeight = None
         self.currentHeight = None

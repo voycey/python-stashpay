@@ -25,7 +25,7 @@
 
 import os, logging
 from stashpay.rpc import RPCConfig
-from stashpay.blockchain import SmartCashBlockchain
+from stashpay.blockchain import StashpayBlockchain
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
@@ -36,12 +36,12 @@ if __name__ == '__main__':
     rpcConfig = RPCConfig('smart','cash')
 
     # Test SQLITE
-    #chain = SmartCashBlockchain('sqlite:////' + directory + '/tt.db', rpcConfig)
+    #chain = StashpayBlockchain('sqlite:////' + directory + '/tt.db', rpcConfig)
 
     # Test MYSQL - You need to create the database before!
-    chain = SmartCashBlockchain('mysql+mysqlconnector://root:stashpay@localhost/stashpay', rpcConfig)
+    chain = StashpayBlockchain('mysql+mysqlconnector://root:stashpay@localhost/stashpay', rpcConfig)
 
     # Test POSTGRESS
-    #chain = SmartCashBlockchain('sqlite:////' + directory + '/tt.db', rpcConfig)
+    #chain = StashpayBlockchain('sqlite:////' + directory + '/tt.db', rpcConfig)
 
     chain.run()

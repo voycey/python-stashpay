@@ -26,7 +26,7 @@
 import logging
 import time
 import sys
-from stashpay.rpc import SmartCashRPC, RPCConfig
+from stashpay.rpc import StashpayRPC, RPCConfig
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     config = RPCConfig('someusername','somepassword')
 
-    rpc = SmartCashRPC(config)
+    rpc = StashpayRPC(config)
 
     sync = rpc.getSyncStatus()
 

@@ -87,7 +87,7 @@ class RPCConfig(object):
         self.authHeader = b'Basic ' + base64.b64encode(self.user + b':' + self.password)
         self.timeout = timeout
 
-class SmartCashRPC(object):
+class StashpayRPC(object):
 
     def __init__(self, config):
 
