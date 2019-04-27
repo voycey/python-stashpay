@@ -24,8 +24,8 @@
 import threading
 import sqlite3 as sql
 
-HF_1_2_MULTINODE_PAYMENTS = 545005
-HF_1_2_8_COLLATERAL_CHANGE = 910000
+HF_1_2_MULTINODE_PAYMENTS = 0
+HF_1_2_8_COLLATERAL_CHANGE = 0
 
 class ThreadedSQLite(object):
     def __init__(self, dburi):

@@ -251,8 +251,8 @@ class StashpayRPC(object):
                 response.data = None
                 response.error = RPCError(16,err)
                 logging.debug(err)
-            elif not 'IsSmartnodeListSynced' in response.data:
-                err = 'getSyncStatus no IsSmartnodeListSynced'
+            elif not 'IsMasternodeListSynced' in response.data:
+                err = 'getSyncStatus no IsMasternodeeListSynced'
                 response.data = None
                 response.error = RPCError(16,err)
                 logging.debug(err)
@@ -264,7 +264,7 @@ class StashpayRPC(object):
 
         return response
 
-    def getSmartNodeList(self, mode):
+    def getMasterNodeList(self, mode):
 
         response = RPCResponse()
 
