@@ -228,10 +228,10 @@ class StashpayRPC(object):
         response = RPCResponse()
 
         try:
-            response.data = self.request('snsync', ['status'])
+            response.data = self.request('mnsync', ['status'])
         except RPCException as e:
             response.error = e.error
-            logging.debug('snsync', exc_info=e)
+            logging.debug('mnsync', exc_info=e)
         else:
 
             # {
@@ -269,10 +269,10 @@ class StashpayRPC(object):
         response = RPCResponse()
 
         try:
-            response.data = self.request('smartnode', ['list', mode ])
+            response.data = self.request('masternode', ['list', mode ])
         except RPCException as e:
             response.error = e.error
-            logging.debug('snsync', exc_info=e)
+            logging.debug('mnsync', exc_info=e)
 
         return response
 
