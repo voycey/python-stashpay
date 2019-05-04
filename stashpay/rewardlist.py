@@ -129,7 +129,7 @@ class SNRewardList(Thread):
 
     def run(self):
 
-        self.currentHeight = 300000
+        self.currentHeight = 1
 
         lastReward = self.getLastReward()
 
