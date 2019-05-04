@@ -324,6 +324,17 @@ class StashpayRPC(object):
 
         return response
 
+    def getBalance(self, address):
+
+        response = RPCResponse()
+
+        try:
+            response.data = self.request('getaddressbalance', [address])
+        except RPCException as e:
+            response.error = e.error
+            logging.debug('getbalance', exc_info=e)
+
+        return response
     def getAddressGroupings(self):
 
         response = RPCResponse()
