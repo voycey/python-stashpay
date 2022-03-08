@@ -1,5 +1,5 @@
 # python-stashpay
-Some python stuff for Stashpay projects.
+Some python libraries for Stashpay projects.
 
 Started from https://github.com/xdustinface/python-smartcash and modified for Stashpay.
 
